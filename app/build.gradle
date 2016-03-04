@@ -6,7 +6,7 @@ android {
     buildToolsVersion '23.0.2'
 
     defaultConfig {
-        applicationId "ch.uzh.ifi.seal.soprafs15.group_00_android"
+        applicationId "ch.uzh.ifi.seal.soprafs16.group_00_android"
         minSdkVersion 16
         targetSdkVersion 23
         versionCode 1
@@ -32,14 +32,15 @@ android {
 }
 
 dependencies {
+    // auto include jar files 
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    // auto include jar files
     compile 'com.android.support:support-v4:23.2.0'
     compile 'com.android.support:appcompat-v7:23.2.0'
     compile 'com.squareup.okhttp3:okhttp:3.2.0'
-    compile 'com.squareup.okhttp:okhttp-urlconnection:2.1.0'
+    compile 'com.squareup.okhttp3:okhttp-urlconnection:3.2.0'
     compile 'com.squareup.picasso:picasso:2.5.2'
     compile 'com.squareup.retrofit:retrofit:1.8.0'
+
     compile 'com.github.frankiesardo:auto-parcel:0.3'
     apt 'com.github.frankiesardo:auto-parcel-processor:0.3'
 }

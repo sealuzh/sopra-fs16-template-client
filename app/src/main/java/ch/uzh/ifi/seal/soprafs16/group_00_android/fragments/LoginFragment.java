@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import ch.uzh.ifi.seal.soprafs15.group_00_android.R;
+import ch.uzh.ifi.seal.soprafs16.group_00_android.R;
 import ch.uzh.ifi.seal.soprafs16.group_00_android.models.RestUri;
 import ch.uzh.ifi.seal.soprafs16.group_00_android.models.User;
 import ch.uzh.ifi.seal.soprafs16.group_00_android.service.RestService;
