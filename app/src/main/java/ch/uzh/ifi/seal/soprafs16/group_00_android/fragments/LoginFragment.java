@@ -1,6 +1,6 @@
 package ch.uzh.ifi.seal.soprafs16.group_00_android.fragments;
 
-import android.app.Activity;
+import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import ch.uzh.ifi.seal.soprafs16.group_00_android.R;
+import ch.uzh.ifi.seal.soprafs15.group_00_android.R;
 import ch.uzh.ifi.seal.soprafs16.group_00_android.models.RestUri;
 import ch.uzh.ifi.seal.soprafs16.group_00_android.models.User;
 import ch.uzh.ifi.seal.soprafs16.group_00_android.service.RestService;
@@ -119,12 +119,12 @@ public class LoginFragment extends Fragment {
     }
 
     @Override
-    public void onAttach(Activity activity) {
-        super.onAttach(activity);
+    public void onAttach(Context context) {
+        super.onAttach(context);
         try {
-            mListener = (OnFragmentInteractionListener) activity;
+            mListener = (OnFragmentInteractionListener) context;
         } catch (ClassCastException e) {
-            throw new ClassCastException(activity.toString() + " must implement OnFragmentInteractionListener");
+            throw new ClassCastException(context.toString() + " must implement OnFragmentInteractionListener");
         }
     }
 
