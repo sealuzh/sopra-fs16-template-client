@@ -14,7 +14,7 @@ import retrofit.converter.GsonConverter;
 
 public class RestService {
 
-    private final static String baseUrl = "http://10.0.2.2:26011/"; // 10.0.2.2 for Android Emulator
+    private final static String baseUrl = "http://10.0.2.2:8080/"; // 10.0.2.2 for Android Emulator
 
     public RestApiInterface restApiInterface;
     private static RestService instance;

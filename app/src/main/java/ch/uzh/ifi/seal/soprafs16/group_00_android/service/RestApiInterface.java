@@ -25,8 +25,8 @@ public interface RestApiInterface {
      * @User user: User to register
      * @param cb
      */
-    @PUT("/user")
-    void createUser(@Body User user, Callback<RestUri> cb);
+    @POST("/user")
+    void createUser(@Body User user, Callback<User> cb);
 
 
 }

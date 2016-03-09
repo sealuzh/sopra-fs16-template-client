@@ -85,10 +85,10 @@ public class LoginFragment extends Fragment {
 
         User user = User.create(name, username);
 
-        RestService.getInstance(getActivity()).createUser(user, new Callback<RestUri>() {
+        RestService.getInstance(getActivity()).createUser(user, new Callback<User>() {
             @Override
-            public void success(RestUri restUri, Response response) {
-                tvLogBox.setText("SUCCESS: User generated at: " + restUri.uri());
+            public void success(User user, Response response) {
+                tvLogBox.setText("SUCCESS: User generated with name: " + user.name());
             }
 
             @Override
